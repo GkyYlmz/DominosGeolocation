@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DominosGeolocation.Consumer": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

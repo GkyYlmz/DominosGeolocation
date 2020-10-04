@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B5D636EC-6527-46F8-A707-23887719C242}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{9FD77379-E598-4CF0-8DE6-5BA1D8D1A19D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5E062F4D-F113-4EE4-8F96-4AB792233B6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{0F7481A9-D48F-4B12-960D-D093A197789E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosGeolocation.Data", "Data\DominosGeolocation.Data\DominosGeolocation.Data.csproj", "{57FE363F-8075-4054-BFF6-D9885F3CD37C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosGeolocation.API", "Api\DominosGeolocation.API\DominosGeolocation.API.csproj", "{950B540A-360D-4FC4-A9A7-BE8BD310CC73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosGeolocation.Helper", "Helper\DominosGeolocation.Helper\DominosGeolocation.Helper.csproj", "{AACFC334-7982-4192-810B-C729C76C7AA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosGeolocation.InsertMq", "Services\DominosGeolocation.InsertMq\DominosGeolocation.InsertMq.csproj", "{FF30352A-071B-40EC-9830-BDB89E9C2AE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{7B4D1D9E-FFA4-4102-B046-F7AC36C6E1DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosGeolocation.Logging", "Logging\DominosGeolocation.Logging\DominosGeolocation.Logging.csproj", "{C54F25ED-B051-4923-85AE-6A1625A2674A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosGeolocation.Consumer", "Services\DominosGeolocation.Consumer\DominosGeolocation.Consumer.csproj", "{DED5B048-4A87-40A6-879D-C718CD4A9386}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{22480498-7690-40DD-87BC-0A4B6EC5A996}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{6C16E135-FFA0-4F71-ADB8-45BC154C2051}"
+	ProjectSection(SolutionItems) = preProject
+		DB\db-init.sh = DB\db-init.sh
+		DB\db-init.sql = DB\db-init.sql
+		DB\Dockerfile = DB\Dockerfile
+		DB\entry-point.sh = DB\entry-point.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57FE363F-8075-4054-BFF6-D9885F3CD37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FE363F-8075-4054-BFF6-D9885F3CD37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FE363F-8075-4054-BFF6-D9885F3CD37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FE363F-8075-4054-BFF6-D9885F3CD37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950B540A-360D-4FC4-A9A7-BE8BD310CC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950B540A-360D-4FC4-A9A7-BE8BD310CC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950B540A-360D-4FC4-A9A7-BE8BD310CC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950B540A-360D-4FC4-A9A7-BE8BD310CC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AACFC334-7982-4192-810B-C729C76C7AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AACFC334-7982-4192-810B-C729C76C7AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AACFC334-7982-4192-810B-C729C76C7AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AACFC334-7982-4192-810B-C729C76C7AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF30352A-071B-40EC-9830-BDB89E9C2AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF30352A-071B-40EC-9830-BDB89E9C2AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF30352A-071B-40EC-9830-BDB89E9C2AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF30352A-071B-40EC-9830-BDB89E9C2AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54F25ED-B051-4923-85AE-6A1625A2674A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54F25ED-B051-4923-85AE-6A1625A2674A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54F25ED-B051-4923-85AE-6A1625A2674A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54F25ED-B051-4923-85AE-6A1625A2674A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED5B048-4A87-40A6-879D-C718CD4A9386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED5B048-4A87-40A6-879D-C718CD4A9386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED5B048-4A87-40A6-879D-C718CD4A9386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED5B048-4A87-40A6-879D-C718CD4A9386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22480498-7690-40DD-87BC-0A4B6EC5A996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22480498-7690-40DD-87BC-0A4B6EC5A996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22480498-7690-40DD-87BC-0A4B6EC5A996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22480498-7690-40DD-87BC-0A4B6EC5A996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57FE363F-8075-4054-BFF6-D9885F3CD37C} = {9FD77379-E598-4CF0-8DE6-5BA1D8D1A19D}
+		{950B540A-360D-4FC4-A9A7-BE8BD310CC73} = {B5D636EC-6527-46F8-A707-23887719C242}
+		{AACFC334-7982-4192-810B-C729C76C7AA6} = {0F7481A9-D48F-4B12-960D-D093A197789E}
+		{FF30352A-071B-40EC-9830-BDB89E9C2AE0} = {5E062F4D-F113-4EE4-8F96-4AB792233B6D}
+		{C54F25ED-B051-4923-85AE-6A1625A2674A} = {7B4D1D9E-FFA4-4102-B046-F7AC36C6E1DB}
+		{DED5B048-4A87-40A6-879D-C718CD4A9386} = {5E062F4D-F113-4EE4-8F96-4AB792233B6D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65FA8C1A-66D0-4D9F-BB25-0B6237FDC7EF}
+	EndGlobalSection
+EndGlobal

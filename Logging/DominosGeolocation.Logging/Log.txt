@@ -1,0 +1,7 @@
+2020-10-02 23:23:17,231 [1] INFO  Logger [(null)] - Deneme
+2020-10-03 19:55:16,546 [7] DEBUG Logger [(null)] - asd
+2020-10-03 20:10:50,392 [1] DEBUG Logger [(null)] - asdasdasd
+2020-10-03 20:36:35,962 [7] DEBUG Logger [(null)] - asd
+2020-10-04 13:49:37,711 [9] DEBUG Logger [(null)] - asd
+2020-10-04 17:12:20,095 [9] DEBUG Logger [(null)] - asd
+2020-10-04 17:12:50,004 [11] DEBUG Logger [(null)] - asd

@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  dominosgeolocation.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+    networks:
+      - dominosnet
+
+      
+  dominosgeolocation.insertmq:
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    networks:
+      - dominosnet
+
+
+  dominosgeolocation.consumer:
+    networks:
+      - dominosnet
+
+  db:
+    networks:
+      - dominosnet
+
+  rabbitmq:
+    networks:
+      - dominosnet
+
+networks:
+    dominosnet:
+        external: true
+
